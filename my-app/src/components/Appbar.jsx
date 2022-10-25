@@ -6,12 +6,13 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import ToggleColorMode from './Theme'
 
 export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{backgroundColor: "#e6e3dc"}}>
+      <AppBar position="static" style={{backgroundColor: "#343a40"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -27,7 +28,7 @@ export default function ButtonAppBar() {
           </Typography>
           <Button color="inherit">About me</Button>
           <Button color="inherit">Experience</Button>
-          <Button color="inherit">Projects</Button>
+          <Button color="inherit" href ="#projects">Projects</Button>
         </Toolbar>
       </AppBar>
     </Box>
