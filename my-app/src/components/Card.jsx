@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Unstable_Grid2';
 import { borderRadius } from '@mui/system';
 
 const bull = (
@@ -22,8 +22,8 @@ export default function BasicCard() {
   return (
     <div className="cards">
     <Card sx={{ minWidth: 500, borderRadius: '20px', backgroundColor: '#e6e3dc' }}>
-    <Grid container spacing={2}>
-    <Grid item>
+    <Grid2 container spacing={2}>
+    <Grid2 item>
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -33,29 +33,28 @@ export default function BasicCard() {
           My Name is Ah{bull}med
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
+          He/Him
         </Typography>
         <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
         </Typography>
       </CardContent>
       </Box>
-      </Grid>
-      <Grid item>
+      </Grid2>
+      <Grid2 item>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <CardContent>
       <CardMedia
         component="img"
-        sx={{ width: 151 }}
-        src={require('../img/IMG_0319.jpg')}
-        alt="Live from space album cover"
+        sx={{ width: 151, borderRadius: '20px' }}
+        height='200'
+        src={require('../img/IMG_1312.jpeg')}
+        alt="My picture"
       />
       </CardContent>
       </Box>   
-      </Grid>
-      </Grid>
+      </Grid2>
+      </Grid2>
     </Card>
     </div>
   );
