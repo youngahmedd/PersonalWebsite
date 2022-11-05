@@ -21,10 +21,10 @@ const bull = (
 export default function BasicCard() {
   return (
     <div className="cards">
-    <Card sx={{ minWidth: 500, borderRadius: '20px', backgroundColor: '#e6e3dc' }}>
+    <Card sx={{ minWidth: 300, borderRadius: '20px', backgroundColor: '#e6e3dc', minheight: 300, m: '40px' }}>
     <Grid2 container spacing={2}>
     <Grid2 item>
-    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: 500 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           About Me
@@ -37,17 +37,23 @@ export default function BasicCard() {
         </Typography>
         <Typography variant="body2">
           I'm a 2A Computer Science student at the Univeristy of waterloo.
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
+          I'm a 2A Computer Science student at the Univeristy of waterloo.
         </Typography>
       </CardContent>
       </Box>
       </Grid2>
       <Grid2 item>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: "center" }}>
       <CardContent>
       <CardMedia
         component="img"
-        sx={{ width: 151, borderRadius: '20px' }}
-        height='200'
+        sx={{ width: 300, borderRadius: '20px', height: 300, mx: 'auto', my: 'auto' }}
+        height='300'
         src={require('../img/IMG_1312.jpeg')}
         alt="My picture"
       />
