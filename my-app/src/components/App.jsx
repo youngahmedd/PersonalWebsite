@@ -6,7 +6,7 @@ import ButtonAppBar from "./Appbar";
 import Footer from "./Footer";
 import Basicard from "./Card"
 import SingleCard from "./SingleCard"
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import SideBar from './SideBar';
 
 
 
@@ -15,16 +15,8 @@ function App() {
 
   return (
   <div>
-  <ButtonAppBar/>
-    <ScrollContainer>
-      <ScrollPage page={0} id="About">
-        <Animator animation={batch(Sticky(), Fade(), MoveOut())}>
-          <Basicard />
-        </Animator>
-      </ScrollPage>
-
-      <ScrollPage page={1} id="Experience">
-        <Animator animation={batch(StickyIn(), FadeIn(), ZoomIn(), MoveOut())}>
+  <SideBar />
+          {/* <Basicard />
         <Grid2 container spacing={2}>
           <Grid2 item>
 
@@ -37,12 +29,7 @@ function App() {
             <SingleCard title="Software Developer" company="University of Waterloo Alternative Fuels Team"/>
           </Grid2>
         </Grid2>
-          
-        </Animator>
-      </ScrollPage>
-
-      <ScrollPage page={2} id="projects">
-        <Animator animation={batch(Sticky(), Fade(), ZoomIn())}>
+        
         <Grid2 container spacing={2}>
           <Grid2 item>
 
@@ -54,12 +41,7 @@ function App() {
           <Grid2 item>
             <SingleCard title="Software Developer" company="University of Waterloo Alternative Fuels Team"/>
           </Grid2>
-        </Grid2>
-          
-        </Animator>
-      </ScrollPage>
-      
-    </ScrollContainer>
+        </Grid2> */}
     <div>
     <Footer />
     </div>

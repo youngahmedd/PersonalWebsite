@@ -17,7 +17,7 @@ const bull = (
 
 export default function SingleCard(props) {
   return (
-    <Card sx={{ minWidth: 200, borderRadius: '20px', backgroundColor: '#e6e3dc'  }}>
+    <Card sx={{ minWidth: 200, borderRadius: '20px', backgroundColor: '#e6e3dc',  }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {props.title}
