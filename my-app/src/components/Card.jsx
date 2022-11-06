@@ -24,7 +24,7 @@ export default function BasicCard() {
     <Card sx={{ minWidth: 300, borderRadius: '20px', backgroundColor: '#e6e3dc', minheight: 300, m: '40px' }}>
     <Grid2 container spacing={2}>
     <Grid2 item>
-    <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: 500 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: 800 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           About Me
@@ -48,7 +48,7 @@ export default function BasicCard() {
       </Box>
       </Grid2>
       <Grid2 item>
-      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: "center" }}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: "center" }}>
       <CardContent>
       <CardMedia
         component="img"
