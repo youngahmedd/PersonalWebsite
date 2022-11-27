@@ -4,9 +4,8 @@ import React, {
 import Grid2 from '@mui/material/Unstable_Grid2';
 import ButtonAppBar from "./Appbar";
 import Footer from "./Footer";
-import Basicard from "./Card"
-import SingleCard from "./SingleCard"
 import SideBar from './SideBar';
+
 
 
 

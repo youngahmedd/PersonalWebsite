@@ -67,7 +67,7 @@ export default function Projects() {
         Item One
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>🎶</Typography>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three

@@ -70,13 +70,13 @@ export default function VerticalTabs() {
         <Tab label="Ford" {...a11yProps(0)} />
         <Tab label="UW Product Management" {...a11yProps(1)} />
         <Tab label="UWAFT" {...a11yProps(2)} />
-        <Tab label="Junior Schievement" {...a11yProps(3)} />
+        {/* <Tab label="Junior Schievement" {...a11yProps(3)} />
         <Tab label="Stride" {...a11yProps(4)} />
-        <Tab label="YMCA" {...a11yProps(5)} />
+        <Tab label="YMCA" {...a11yProps(5)} /> */}
       </Tabs>
       <TabPanel value={value} index={0}>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        Ford Motors Company
+        Ford Motors Company <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>🏎️</Typography>
         </Typography>
         <Typography variant="h5" component="div">
         Software Stability, performance and Power Optimization Intern
@@ -110,9 +110,20 @@ export default function VerticalTabs() {
         </Typography>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+      Univerity of Waterloo Alternative Fuels team <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>🚙</Typography>
+        </Typography>
+        <Typography variant="h5" component="div">
+        Software Developer
+        </Typography>
+        <Typography variant="body2">
+        • Collaborated with a team of 10 developers to maintain and develop the Human Machine Interface (HMI)
+        <br></br>
+        • Developing and designing the Sponsorship Module within the team website using ReactJS, Material UI and
+        Figma
+        </Typography>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      {/* <TabPanel value={value} index={3}>
         Item Four
       </TabPanel>
       <TabPanel value={value} index={4}>
@@ -120,7 +131,7 @@ export default function VerticalTabs() {
       </TabPanel>
       <TabPanel value={value} index={5}>
         Item Six
-      </TabPanel>
+      </TabPanel> */}
     </Box>
     </div>
   );
